@@ -1,0 +1,52 @@
+/* footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-bg-color);
+}
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--bg-color);
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.inversion {
+  color: var(--accent);
+}
+.maps {
+  transition: color var(--transition);
+
+  color: var(--bg-color);
+
+  line-height: 1.71;
+  font-style: normal;
+}
+.maps:hover,
+.maps:focus {
+  color: var(--accent);
+}
+.link-footer {
+  transition: color var(--transition);
+
+  color: var(--list-address);
+
+  line-height: 1.71;
+  font-style: normal;
+}
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--accent);
+}
+.list-item:not(:last-child) {
+  margin-bottom: 9px;
+}

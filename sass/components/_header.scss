@@ -1,0 +1,95 @@
+/* header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+/* logo */
+.logo-header {
+  color: var(--black);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.accent {
+  color: var(--accent);
+}
+/* site-nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  position: relative;
+  /* transition: задается на базовый класс,
+   не на :hover и :focus */
+  transition: color var(--transition);
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+.site-nav .current {
+  color: var(--accent);
+}
+.site-nav .current::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/* auth-nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.auth-nav .link {
+  transition: color var(--transition);
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent);
+}
+.icon-header {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
