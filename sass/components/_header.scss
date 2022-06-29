@@ -4,7 +4,7 @@
 }
 /* logo */
 .logo-header {
-  color: var(--black);
+  color: $black;
 
   font-family: Raleway;
   font-weight: 700;
@@ -12,7 +12,7 @@
   line-height: 1.19;
 }
 .accent {
-  color: var(--accent);
+  color: $accent;
 }
 /* site-nav */
 .site-nav {
@@ -26,14 +26,14 @@
   position: relative;
   /* transition: задается на базовый класс,
    не на :hover и :focus */
-  transition: color var(--transition);
+  transition: color $transition;
 
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 
   font-weight: 500;
   line-height: 1.14;
@@ -41,10 +41,10 @@
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent);
+  color: $accent;
 }
 .site-nav .current {
-  color: var(--accent);
+  color: $accent;
 }
 .site-nav .current::after {
   content: '';
@@ -55,7 +55,7 @@
   width: 100%;
   height: 4px;
 
-  background-color: var(--accent);
+  background-color: $accent;
   border-radius: 2px;
 }
 .main-nav {
@@ -71,14 +71,14 @@
   margin-right: 50px;
 }
 .auth-nav .link {
-  transition: color var(--transition);
+  transition: color $transition;
 
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   font-weight: 500;
   line-height: 1.14;
@@ -86,7 +86,7 @@
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: var(--accent);
+  color: $accent;
 }
 .icon-header {
   margin-right: 10px;

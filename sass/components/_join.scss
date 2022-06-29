@@ -5,7 +5,7 @@
 .join-text {
   margin-bottom: 20px;
 
-  color: var(--bg-color);
+  color: $bg-color;
 
   font-weight: 700;
   font-size: 14px;
@@ -21,13 +21,13 @@
   margin-right: 10px;
 }
 .footer-soc-link {
-  transition: background-color var(--transition);
+  transition: background-color $transition;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: var(--bg-color);
+  color: $bg-color;
   background-color: rgba(255, 255, 255, 0.1);
 
   width: 44px;
@@ -39,5 +39,5 @@
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: var(--accent);
+  background-color: $accent;
 }

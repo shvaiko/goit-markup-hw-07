@@ -10,7 +10,7 @@
 .footer-label-title {
   margin-bottom: 20px;
 
-  color: var(--bg-color);
+  color: $bg-color;
 
   font-family: inherit;
   font-weight: 700;
@@ -18,7 +18,7 @@
   text-transform: uppercase;
 }
 .footer-input {
-  transition: border-color var(--transition);
+  transition: border-color $transition;
 
   padding-top: 15px;
   padding-right: 16px;
@@ -29,20 +29,20 @@
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: var(--bg-color);
+  color: $bg-color;
   background-color: transparent;
   border-radius: 4px;
 }
 .footer-input:hover,
 .footer-input:focus {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 .footer-input:placeholder-shown {
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 .footer-button {
-  transition: background-color var(--transition), box-shadow var(--transition);
+  transition: background-color $transition, box-shadow $transition;
 
   display: flex;
   align-items: center;
@@ -55,8 +55,8 @@
   padding-right: 28px;
   width: 200px;
 
-  background-color: var(--accent);
-  color: var(--bg-color);
+  background-color: $accent;
+  color: $bg-color;
 
   font-family: inherit;
   font-weight: 700;

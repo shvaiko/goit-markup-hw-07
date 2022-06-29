@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--secondary-bg-color);
+  background-color: $secondary-bg-color;
 }
 .footer > .container {
   display: flex;
@@ -13,7 +13,7 @@
   display: inline-block;
   margin-bottom: 20px;
 
-  color: var(--bg-color);
+  color: $bg-color;
 
   font-family: 'Raleway';
   font-weight: 700;
@@ -21,31 +21,31 @@
   line-height: 1.19;
 }
 .inversion {
-  color: var(--accent);
+  color: $accent;
 }
 .maps {
-  transition: color var(--transition);
+  transition: color $transition;
 
-  color: var(--bg-color);
+  color: $bg-color;
 
   line-height: 1.71;
   font-style: normal;
 }
 .maps:hover,
 .maps:focus {
-  color: var(--accent);
+  color: $accent;
 }
 .link-footer {
-  transition: color var(--transition);
+  transition: color $transition;
 
-  color: var(--list-address);
+  color: $list-address;
 
   line-height: 1.71;
   font-style: normal;
 }
 .link-footer:hover,
 .link-footer:focus {
-  color: var(--accent);
+  color: $accent;
 }
 .list-item:not(:last-child) {
   margin-bottom: 9px;
