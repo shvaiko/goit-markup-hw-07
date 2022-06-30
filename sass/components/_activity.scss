@@ -17,10 +17,14 @@
 }
 .activity-item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.activity-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .activity-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 /* Позиционированные элементы
 первому предку дается position: relative;
 ребенку дается position: absolute; */

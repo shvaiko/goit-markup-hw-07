@@ -21,10 +21,14 @@
 }
 .features-item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .features-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .features-icon {
   display: flex;
   justify-content: center;

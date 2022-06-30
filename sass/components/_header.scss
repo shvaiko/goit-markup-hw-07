@@ -18,10 +18,14 @@
 .site-nav {
   display: flex;
   margin-left: 93px;
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
+// .site-nav .item:not(:last-child) {
+//   margin-right: 50px;
+// }
 .nav-link {
   position: relative;
   /* transition: задается на базовый класс,
@@ -50,19 +54,32 @@
 // }
 .site-nav .current {
   color: $accent;
-}
-.site-nav .current::after {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
 
-  width: 100%;
-  height: 4px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 
-  background-color: $accent;
-  border-radius: 2px;
+    width: 100%;
+    height: 4px;
+
+    background-color: $accent;
+    border-radius: 2px;
+  }
 }
+// .site-nav .current::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0px;
+//   left: 0px;
+
+//   width: 100%;
+//   height: 4px;
+
+//   background-color: $accent;
+//   border-radius: 2px;
+// }
 .main-nav {
   display: flex;
   align-items: center;
@@ -71,10 +88,14 @@
 .auth-nav {
   display: flex;
   margin-left: auto;
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.auth-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
+// .auth-nav .item:not(:last-child) {
+//   margin-right: 50px;
+// }
 .auth-link {
   transition: color $transition;
 

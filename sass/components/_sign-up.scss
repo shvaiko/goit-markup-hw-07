@@ -37,15 +37,20 @@
   &:focus {
     border-color: $accent;
   }
+  &:placeholder-shown {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+  }
 }
 // .footer-input:hover,
 // .footer-input:focus {
 //   border-color: $accent;
 // }
-.footer-input:placeholder-shown {
-  font-size: 16px;
-  letter-spacing: 0.03em;
-}
+
+// .footer-input:placeholder-shown {
+//   font-size: 16px;
+//   letter-spacing: 0.03em;
+// }
 .footer-button {
   transition: background-color $transition, box-shadow $transition;
 

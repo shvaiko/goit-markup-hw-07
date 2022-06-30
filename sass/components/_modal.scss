@@ -34,10 +34,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   border-radius: 4px;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
+  }
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
-}
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
+// }
 .icon-close {
   transition: color $transition;
   position: absolute;
@@ -89,10 +93,14 @@
 
   display: flex;
   flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
-.form-field:not(:last-child) {
-  margin-bottom: 10px;
-}
+// .form-field:not(:last-child) {
+//   margin-bottom: 10px;
+// }
 .form-field label {
   margin-bottom: 4px;
 
@@ -114,6 +122,10 @@
   }
   &:hover {
     border: 1px solid $accent;
+  }
+  .form-field:focus-within & {
+    outline: none;
+    border-color: $accent;
   }
 }
 // .form-input:hover + svg {
@@ -142,6 +154,7 @@
 // .comment:hover {
 //   border: 1px solid $accent;
 // }
+
 .form-field textarea::placeholder {
   color: $textarea-color;
 
@@ -171,13 +184,13 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.checkbox-input:checked + .checkbox-icon {
-  background-color: $accent;
-  background-image: url(../images/form-icon-check.svg);
-  border-color: $accent;
-  background-size: contain;
-  background-origin: border-box;
-}
+// .checkbox-input:checked + .checkbox-icon {
+//   background-color: $accent;
+//   background-image: url(../images/form-icon-check.svg);
+//   border-color: $accent;
+//   background-size: contain;
+//   background-origin: border-box;
+// }
 .checkbox-icon {
   display: inline-block;
   margin-right: 7px;
@@ -185,6 +198,14 @@
   height: 15px;
   border: 2px solid $secondary-text-color;
   border-radius: 4px;
+
+  .checkbox-input:checked + & {
+    background-color: $accent;
+    background-image: url(../images/form-icon-check.svg);
+    border-color: $accent;
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 .terms {
   margin-left: 5px;
@@ -232,11 +253,15 @@
 
   fill: $secondary-text-color;
   transition: fill $transition;
+
+  .form-field:focus-within & {
+    fill: $accent;
+  }
 }
-.form-field:focus-within .icon-input {
-  fill: $accent;
-}
-.form-field:focus-within .form-input {
-  outline: none;
-  border-color: $accent;
-}
+// .form-field:focus-within .icon-input {
+//   fill: $accent;
+// }
+// .form-field:focus-within .form-input {
+//   outline: none;
+//   border-color: $accent;
+// }

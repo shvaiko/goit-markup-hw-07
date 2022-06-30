@@ -4,11 +4,16 @@
   padding-bottom: 60px;
 
   background-color: $secondary-bg-color;
+
+  & > .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
-.footer > .container {
-  display: flex;
-  align-items: baseline;
-}
+// .footer > .container {
+//   display: flex;
+//   align-items: baseline;
+// }
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
