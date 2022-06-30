@@ -22,7 +22,7 @@
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .link {
+.nav-link {
   position: relative;
   /* transition: задается на базовый класс,
    не на :hover и :focus */
@@ -38,11 +38,16 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $accent;
-}
+// .nav-link:hover,
+// .nav-link:focus {
+//   color: $accent;
+// }
 .site-nav .current {
   color: $accent;
 }
@@ -70,7 +75,7 @@
 .auth-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-.auth-nav .link {
+.auth-link {
   transition: color $transition;
 
   display: flex;
@@ -83,11 +88,16 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: $accent;
-}
+// .auth-link:hover,
+// .auth-link:focus {
+//   color: $accent;
+// }
 .icon-header {
   margin-right: 10px;
 
