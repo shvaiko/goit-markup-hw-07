@@ -57,14 +57,19 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 .close-modal {
   fill: currentColor;
 }
-.icon-close:hover,
-.icon-close:focus {
-  color: $accent;
-}
+// .icon-close:hover,
+// .icon-close:focus {
+//   color: $accent;
+// }
 /* Form */
 .form {
   width: 448px;
@@ -103,13 +108,20 @@
   border-radius: 4px;
   padding-right: 12px;
   padding-left: 42px;
+
+  &:hover + svg {
+    fill: $accent;
+  }
+  &:hover {
+    border: 1px solid $accent;
+  }
 }
-.form-input:hover + svg {
-  fill: $accent;
-}
-.form-input:hover {
-  border: 1px solid $accent;
-}
+// .form-input:hover + svg {
+//   fill: $accent;
+// }
+// .form-input:hover {
+//   border: 1px solid $accent;
+// }
 .comment {
   transition: border-color $transition;
 
@@ -122,10 +134,14 @@
   height: 120px;
   border: 1px solid $border-color;
   border-radius: 4px;
+
+  &:hover {
+    border: 1px solid $accent;
+  }
 }
-.comment:hover {
-  border: 1px solid $accent;
-}
+// .comment:hover {
+//   border: 1px solid $accent;
+// }
 .form-field textarea::placeholder {
   color: $textarea-color;
 
@@ -197,12 +213,18 @@
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+    color: $bg-color;
+  }
 }
-.button-submit:hover,
-.button-submit:focus {
-  background-color: $hover-btn;
-  color: $bg-color;
-}
+// .button-submit:hover,
+// .button-submit:focus {
+//   background-color: $hover-btn;
+//   color: $bg-color;
+// }
 .icon-input {
   position: absolute;
   bottom: 10px;

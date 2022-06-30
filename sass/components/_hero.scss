@@ -49,9 +49,15 @@
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+    color: $bg-color;
+  }
 }
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: $hover-btn;
-  color: $bg-color;
-}
+// .hero-btn:hover,
+// .hero-btn:focus {
+//   background-color: $hover-btn;
+//   color: $bg-color;
+// }

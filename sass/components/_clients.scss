@@ -33,12 +33,18 @@
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+    color: $accent;
+  }
 }
 .icon-clients {
   fill: currentColor;
 }
-.clients-icon-link:hover,
-.clients-icon-link:focus {
-  border-color: $accent;
-  color: $accent;
-}
+// .clients-icon-link:hover,
+// .clients-icon-link:focus {
+//   border-color: $accent;
+//   color: $accent;
+// }

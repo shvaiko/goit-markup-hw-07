@@ -30,11 +30,16 @@
 
   line-height: 1.71;
   font-style: normal;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
-.maps:hover,
-.maps:focus {
-  color: $accent;
-}
+// .maps:hover,
+// .maps:focus {
+//   color: $accent;
+// }
 .link-footer {
   transition: color $transition;
 
@@ -42,11 +47,16 @@
 
   line-height: 1.71;
   font-style: normal;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
-.link-footer:hover,
-.link-footer:focus {
-  color: $accent;
-}
+// .link-footer:hover,
+// .link-footer:focus {
+//   color: $accent;
+// }
 .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
