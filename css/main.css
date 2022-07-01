@@ -18,6 +18,19 @@ textarea {
   resize: none;
 }
 
+/* list-style hidden */
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* text-decoration hidden */
+.link {
+  text-decoration: none;
+}
+
 /* visually-hidden */
 .visually-hidden {
   position: absolute;
@@ -30,19 +43,6 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* list-style hidden */
-.list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-/* text-decoration hidden */
-.link {
-  text-decoration: none;
 }
 
 html {
